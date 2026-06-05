@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Registration System</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial;
+            background:#f2f2f2;
+        }
+
+        .container{
+
+            width:700px;
+            margin:30px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+
+        }
+
+        h1{
+
+            text-align:center;
+            margin-bottom:20px;
+
+        }
+
+        .input-group{
+
+            margin-bottom:15px;
+
+        }
+
+        label{
+
+            display:block;
+            margin-bottom:5px;
+
+        }
+
+        input,
+        select,
+        textarea{
+
+            width:100%;
+            padding:10px;
+
+        }
+
+        button{
+
+            width:100%;
+            padding:12px;
+            background:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+
+        }
+
+        button:hover{
+
+            background:darkgreen;
+
+        }
+
+        table{
+
+            width:100%;
+            margin-top:20px;
+            border-collapse:collapse;
+
+        }
+
+        table,
+        th,
+        td{
+
+            border:1px solid black;
+
+        }
+
+        th,
+        td{
+
+            padding:10px;
+            text-align:center;
+
+        }
+
+        .skills{
+
+            display:flex;
+            gap:20px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Registration Form</h1>
+
+<div class="input-group">
+
+<label>Name</label>
+
+<input type="text" id="name">
+
+</div>
+
+<div class="input-group">
+
+<label>Email</label>
+
+<input type="email" id="email">
+
+</div>
+
+<div class="input-group">
+
+<label>Age</label>
+
+<input type="number" id="age">
+
+</div>
+
+<div class="input-group">
+
+<label>Gender</label>
+
+<input type="radio" name="gender" value="Male"> Male
+
+<input type="radio" name="gender" value="Female"> Female
+
+</div>
+
+<br>
+
+<div class="input-group">
+
+<label>Skills</label>
+
+<div class="skills">
+
+<label>
+<input type="checkbox" value="Java" class="skill">
+Java
+</label>
+
+<label>
+<input type="checkbox" value="SQL" class="skill">
+SQL
+</label>
+
+<label>
+<input type="checkbox" value="HTML" class="skill">
+HTML
+</label>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>Department</label>
+
+<select id="department">
+
+<option>Java Developer</option>
+
+<option>Frontend Developer</option>
+
+<option>Full Stack Developer</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Address</label>
+
+<textarea id="address"></textarea>
+
+</div>
+
+<button onclick="registerStudent()">
+
+Register Student
+
+</button>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Email</th>
+<th>Age</th>
+<th>Gender</th>
+<th>Department</th>
+
+</tr>
+
+</thead>
+
+<tbody id="studentTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script>
+
+let students=[];
+
+function registerStudent()
+{
+
+    let name =
+    document.getElementById("name").value;
+
+    let email =
+    document.getElementById("email").value;
+
+    let age =
+    document.getElementById("age").value;
+
+    let department =
+    document.getElementById("department").value;
+
+    let gender =
+    document.querySelector(
+    'input[name="gender"]:checked'
+    );
+
+    if(gender)
+    {
+        gender = gender.value;
+    }
+    else
+    {
+        gender = "";
+    }
+
+    let selectedSkills=[];
+
+    let skills =
+    document.querySelectorAll(".skill");
+
+    skills.forEach(function(skill)
+    {
+
+        if(skill.checked)
+        {
+            selectedSkills.push(skill.value);
+        }
+
+    });
+
+    let student={
+
+        name:name,
+        email:email,
+        age:age,
+        gender:gender,
+        department:department,
+        skills:selectedSkills
+
+    };
+
+    students.push(student);
+
+    displayStudents();
+
+}
+
+function displayStudents()
+{
+
+    let table =
+    document.getElementById("studentTable");
+
+    table.innerHTML="";
+
+    students.forEach(function(student)
+    {
+
+        table.innerHTML +=
+
+        `<tr>
+
+        <td>${student.name}</td>
+
+        <td>${student.email}</td>
+
+        <td>${student.age}</td>
+
+        <td>${student.gender}</td>
+
+        <td>${student.department}</td>
+
+        </tr>`;
+
+    });
+
+}
+
+</script>
+
+</body>
+
+</html>
