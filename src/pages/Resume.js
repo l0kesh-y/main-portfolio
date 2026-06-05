@@ -67,13 +67,13 @@ export default function Resume() {
             
             <div className="experience-item">
               <div className="experience-header">
-                <h4>Web Developer Intern</h4>
-                <span className="company">Internpe</span>
-                <span className="date">Aug 2024 - Sep 2024</span>
+                <h4>Backend Developer Intern</h4>
+                <span className="company">Hexaware Technologies</span>
+                <span className="date">Feb 2026 - Now</span>
               </div>
               <ul>
-                <li>developed of 3 web applications using HTML, CSS and JavaScript</li>
-                <li>Collaborated with Mentor in Google classroom and deliver projects on time</li>
+                <li>developed of web applications using FastAPI and OpenAPI</li>
+                <li>Collaborated with Mentor in Google classroom and deliver projects task on time</li>
               </ul>
             </div>
 

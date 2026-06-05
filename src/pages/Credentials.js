@@ -24,37 +24,37 @@ export default function Credentials() {
       id: 3,
       title: 'Fundamentals of Java Programming',
       issuer: 'Coursera',
-      date: '2024',
+      date: '2025',
       image: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LW3L0TN9IHJW/CERTIFICATE_LANDING_PAGE~LW3L0TN9IHJW.jpeg',
       credentialId: 'JAVA-FUND-2024',
       verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/LW3L0TN9IHJW'
     },
     {
       id: 4,
-      title: 'Google Cloud Platform Fundamentals',
-      issuer: 'Google Cloud',
-      date: '2023',
-      image: 'https://images.unsplash.com/photo-1516534775068-bb57e39c1a29?w=500&h=300&fit=crop',
-      credentialId: 'GCP-FUND-2023',
-      verifyUrl: 'https://coursera.org/share/bbeb14bb3a08045abde834d37021a3a6'
+      title: 'Problem Solving',
+      issuer: 'Hackerrank',
+      date: '2025',
+      image: 'https://5.imimg.com/data5/SELLER/Default/2023/10/354785340/GA/BS/CK/63475444/hackerrank-software.png',
+      credentialId: 'PS-2025',
+      verifyUrl: 'https://www.hackerrank.com/certificates/a2e62c6fea18'
     },
     {
       id: 5,
-      title: 'MongoDB Developer Certification',
-      issuer: 'MongoDB University',
-      date: '2023',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
-      credentialId: 'MONGO-DEV-2023',
+      title: 'SQL',
+      issuer: 'Hackerrank',
+      date: '2026',
+      image: 'https://5.imimg.com/data5/SELLER/Default/2023/10/354785340/GA/BS/CK/63475444/hackerrank-software.png',
+      credentialId: 'SQL-DEV-2023',
       verifyUrl: 'https://university.mongodb.com/verification'
     },
     {
       id: 6,
       title: 'IBM Machine Learning Introduction',
       issuer: 'Coursera',
-      date: '2023',
-      image: 'https://images.unsplash.com/photo-1516534775068-bb57e39c1a29?w=500&h=300&fit=crop',
-      credentialId: 'ML-IBM-2023',
-      verifyUrl: 'https://coursera.org/share/8b6d0c997b0c52f317931e426e01e89d'
+      date: '2025',
+      image: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XXUU4FZG8DLG/CERTIFICATE_LANDING_PAGE~XXUU4FZG8DLG.jpeg',
+      credentialId: 'ML-IBM-2025',
+      verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/XXUU4FZG8DLG'
     }
   ];
 
@@ -171,8 +171,8 @@ export default function Credentials() {
                 <Award size={24} />
               </div>
               <div className="achievement-content">
-                <h3>Geeks For Geeks College's 5th Rank</h3>
-                <p>Among 1000+ Students, I have Secured 5th Rank in competitive Programming of geeks for geeks</p>
+                <h3>Geeks For Geeks College's 2th Rank</h3>
+                <p>Among 1000+ Students, I have Secured 2th Rank in competitive Programming of geeks for geeks</p>
               </div>
             </div>
           </div>
