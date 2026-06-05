@@ -1,4 +1,4 @@
-name: Deploy to Render
+name: Build and Deploy
 
 on:
   push:
@@ -11,7 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -19,32 +22,53 @@ jobs:
         node-version: '20'
         cache: 'npm'
     
-    - name: Install frontend dependencies
-      run: npm install
+    - name: Configure Git
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git config --global init.defaultBranch main
     
-    - name: Install backend dependencies
-      run: cd server && npm install
+    - name: Clean install frontend dependencies
+      run: |
+        rm -rf node_modules package-lock.json
+        npm install
+    
+    - name: Clean install backend dependencies
+      run: |
+        cd server
+        rm -rf node_modules package-lock.json
+        npm install
     
     - name: Build application
-      run: npm run build
+      run: |
+        npm run build
       env:
         CI: false
+        NODE_OPTIONS: --max_old_space_size=4096
     
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: build-files
         path: build/
+        retention-days: 1
 
-  deploy:
+  deploy-status:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     
     steps:
-    - name: Deploy Status
+    - name: Deployment Status
       run: |
-        echo "✅ Build completed successfully"
-        echo "🚀 Ready for Render deployment"
-        echo "Frontend URL: https://main-portfolio-lokesh.onrender.com"
-        echo "Backend URL: https://portfolio-backend-lokesh.onrender.com"
+        echo "✅ Build completed successfully!"
+        echo "🚀 Portfolio is ready for deployment"
+        echo ""
+        echo "📋 Deployment Options:"
+        echo "1. Render: https://render.com (Recommended)"
+        echo "2. Netlify: https://netlify.com"  
+        echo "3. Vercel: https://vercel.com"
+        echo ""
+        echo "🌍 Your URLs will be:"
+        echo "Frontend: https://main-portfolio-lokesh.onrender.com"
+        echo "Backend API: https://portfolio-backend-lokesh.onrender.com"
