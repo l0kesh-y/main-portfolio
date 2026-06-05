@@ -1,68 +1,74 @@
 import { useState } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 
+// Import project images
+import aiLearningImg from '../assets/lokesh.jpg';
+import codeVerseImg from '../assets/Rapid-min.png';
+import newsAnalyzerImg from '../assets/lokesh.jpg';
+import portfolioImg from '../assets/image.png';
+
 export default function Projects() {
   const [filter, setFilter] = useState('all');
 
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include product catalog, shopping cart, payment integration, and order management.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=300&fit=crop',
+      title: 'AI Learning Assistant',
+      description: 'An intelligent learning assistant powered by AI to help students learn more effectively. Features personalized learning paths, progress tracking, and interactive quizzes.',
+      image: aiLearningImg,
       category: 'fullstack',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com/Lokesh777777',
-      live: 'https://github.com/Lokesh777777'
+      technologies: ['React', 'Node.js', 'MongoDB', 'AI/ML'],
+      github: 'https://github.com/l0kesh-y/AI-LEARNING_ASSISTANT',
+      live: 'https://ai-learning-assistant-cu4a.onrender.com'
     },
     {
       id: 2,
-      title: 'Weather App',
-      description: 'A responsive weather application with real-time data. Shows current weather, forecasts, and weather alerts with beautiful UI.',
-      image: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?w=500&h=300&fit=crop',
-      category: 'frontend',
-      technologies: ['React', 'API', 'CSS3'],
-      github: 'https://github.com/Lokesh777777',
-      live: 'https://github.com/Lokesh777777'
+      title: 'CodeVerse AI',
+      description: 'An AI-powered code analysis and generation platform. Helps developers write better code with intelligent suggestions and automated code reviews.',
+      image: codeVerseImg,
+      category: 'fullstack',
+      technologies: ['React', 'Node.js', 'AI API', 'Express'],
+      github: 'https://github.com/l0kesh-y/CodeVerse_AI',
+      live: 'https://codeverse-ai-lokesh.onrender.com'
     },
     {
       id: 3,
-      title: 'Task Management API',
-      description: 'RESTful API for task management with authentication. Includes user authentication, task CRUD operations, and role-based access control.',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
+      title: 'AI News Analyzer',
+      description: 'Real-time news analysis platform using AI to categorize, summarize, and analyze news sentiment. Features automated content processing and trend detection.',
+      image: newsAnalyzerImg,
       category: 'backend',
-      technologies: ['Node.js', 'Express', 'JWT', 'PostgreSQL'],
-      github: 'https://github.com/Lokesh777777',
-      live: 'https://github.com/Lokesh777777'
+      technologies: ['Node.js', 'Express', 'AI/ML', 'MongoDB'],
+      github: 'https://github.com/l0kesh-y/ai-news-analyzer',
+      live: 'https://ai-newsanalyzer.onrender.com'
     },
     {
       id: 4,
       title: 'Portfolio Website',
-      description: 'Personal portfolio website with modern design. Features dark/light theme toggle, responsive design, and smooth animations.',
-      image: 'https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=500&h=300&fit=crop',
+      description: 'Modern, responsive portfolio website with dark/light theme toggle, smooth animations, and contact form integration. Built with React and deployed on Netlify.',
+      image: portfolioImg,
       category: 'frontend',
-      technologies: ['React', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/Lokesh777777',
-      live: 'https://github.com/Lokesh777777'
+      technologies: ['React', 'CSS3', 'JavaScript', 'Netlify'],
+      github: 'https://github.com/l0kesh-y/main-portfolio',
+      live: 'https://lokesh-portfolio.netlify.app'
     },
     {
       id: 5,
-      title: 'Chat Application',
-      description: 'Real-time chat application with Socket.io. Features include user authentication, real-time messaging, and user presence indicators.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop',
+      title: 'E-Commerce Platform',
+      description: 'Full-stack e-commerce application with user authentication, product catalog, shopping cart, payment integration, and order management system.',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
       category: 'fullstack',
-      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/Lokesh777777',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      github: 'https://github.com/Lokesh777777/ecommerce-app',
       live: 'https://github.com/Lokesh777777'
     },
     {
       id: 6,
-      title: 'Blog CMS',
-      description: 'Content management system for blogs. Includes post creation, editing, categorization, and comment management features.',
-      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&h=300&fit=crop',
+      title: 'Task Management System',
+      description: 'Collaborative task management application with real-time updates, team collaboration features, and progress tracking. Includes role-based access control.',
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
       category: 'fullstack',
-      technologies: ['React', 'Node.js', 'MySQL', 'Express'],
-      github: 'https://github.com/Lokesh777777',
+      technologies: ['React', 'Socket.io', 'Node.js', 'PostgreSQL'],
+      github: 'https://github.com/Lokesh777777/task-manager',
       live: 'https://github.com/Lokesh777777'
     }
   ];

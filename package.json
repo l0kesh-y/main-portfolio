@@ -2,7 +2,7 @@
   "name": "lokesh-portfolio",
   "version": "1.0.0",
   "description": "Modern Full Stack Portfolio - Lokesh Y",
-  "homepage": "https://github.com/l0kesh-y/main-portfolio",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "netlify-build": "npm install && npm run build"
