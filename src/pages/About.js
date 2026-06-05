@@ -1,16 +1,12 @@
 export default function About() {
   const techStack = [
     {
-      name: 'Core Java',
+      name: 'Java',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
     },
     {
       name: 'React',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
-    },
-    {
-      name: 'Spring Boot',
-      logo: 'https://img.icons8.com/?size=100&id=90519&format=png&color=000000'
     },
     {
       name: 'MySQL',
@@ -45,9 +41,13 @@ export default function About() {
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg'
     },
     {
-      name: 'Maven',
-      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg'
-    }
+      name: 'Node.JS',
+      logo: 'https://www.freepnglogos.com/uploads/javascript-png/javascript-nodejs-logo-27.png'
+    },
+    {
+      name: 'Express.JS',
+      logo: 'https://www.manektech.com//storage/technology/image/1646733600.webp'
+    },
   ];
 
   return (

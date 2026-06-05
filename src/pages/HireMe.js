@@ -43,9 +43,7 @@ export default function HireMe() {
     setStatus({ type: '', message: '' });
 
     try {
-      const apiUrl = process.env.NODE_ENV === 'production' 
-        ? '/api/hire'  // Same domain in production
-        : 'http://localhost:5000/api/hire'; // Local development
+      const apiUrl = '/.netlify/functions/hire'; // Netlify Functions endpoint
         
       const response = await fetch(apiUrl, {
         method: 'POST',

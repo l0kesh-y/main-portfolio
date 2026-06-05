@@ -9,8 +9,8 @@ export default function Home() {
       username: '@l0kesh-y',
       image: 'https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp',
       stats: [
-        { label: 'Repos', value: '20+' },
-        { label: 'Contributions', value: '500+' }
+        { label: 'Repos', value: '30+' },
+        { label: 'Contributions', value: '130+' }
       ],
       url: 'https://github.com/l0kesh-y',
       color: '#171515'
@@ -20,7 +20,7 @@ export default function Home() {
       username: '@l0kesh-y',
       image: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=400&h=200&fit=crop',
       stats: [
-        { label: 'Connections', value: '500+' },
+        { label: 'Connections', value: '800+' },
         { label: 'Posts', value: '10+' }
       ],
       url: 'https://www.linkedin.com/in/l0kesh-y/',
@@ -31,7 +31,7 @@ export default function Home() {
       username: '@lokesh-y',
       image: 'https://assets.leetcode.com/static_assets/public/images/LeetCode_Sharing.png',
       stats: [
-        { label: 'Solved', value: '100+' },
+        { label: 'Solved', value: '450+' },
         { label: 'Ranking', value: '30%' }
       ],
       url: 'https://leetcode.com/u/lokesh-y/',
@@ -40,10 +40,10 @@ export default function Home() {
     {
       name: 'HackerRank',
       username: '@lokeshyuvaraj33',
-      image: 'https://hrcdn.net/s3_pub/hr-assets/0/1689145976-b4d5c6f6b6-hrlogo2.png',
+      image: 'https://cdn.nwe.io/files/x/62/37/c30122710aaaf27ba163584f6194.png',
       stats: [
         { label: 'Stars', value: '5 Star' },
-        { label: 'Domain', value: 'Java' }
+        { label: 'Domain', value: 'SQL' }
       ],
       url: 'https://www.hackerrank.com/profile/lokeshyuvaraj33',
       color: '#00EA64'
@@ -53,8 +53,8 @@ export default function Home() {
       username: '@lokeshyuvaraj33',
       image: 'https://media.geeksforgeeks.org/gfg-gg-logo.svg',
       stats: [
-        { label: 'Rank', value: '5th' },
-        { label: 'Problems', value: '200+' }
+        { label: 'Rank', value: '2nd' },
+        { label: 'Problems', value: '500+' }
       ],
       url: 'https://www.geeksforgeeks.org/user/lokeshyuvaraj33/',
       color: '#2F8D46'

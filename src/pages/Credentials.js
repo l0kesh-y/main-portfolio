@@ -4,30 +4,30 @@ export default function Credentials() {
   const certificates = [
     {
       id: 1,
-      title: 'Java Full Stack Developer specialization',
-      issuer: 'Coursera',
+      title: 'MERN Full Stack Developer specialization',
+      issuer: 'GeeksforGeeks',
       date: '2025',
-      image: 'https://images.unsplash.com/photo-1516534775068-bb57e39c1a29?w=500&h=300&fit=crop',
-      credentialId: 'JAVA-FULLSTACK-2025',
-      verifyUrl: 'https://www.coursera.org/account/accomplishments/specialization/certificate/JJV2T8F8JSC4'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjz-Yn96YSc8ElCL3JHQV2J3HwBTWAzTtukA&s',
+      credentialId: 'FULLSTACK-2025',
+      verifyUrl: 'https://www.geeksforgeeks.org/certificate/f20127f67c6113817a9233a12b29d410'
     },
     {
       id: 2,
       title: 'Data Structures & Backend with Java',
       issuer: 'Coursera',
       date: '2025',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+      image: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~TEJX1V3WZEJ2/CERTIFICATE_LANDING_PAGE~TEJX1V3WZEJ2.jpeg',
       credentialId: 'DATA-STRUCT-2025',
-      verifyUrl: 'https://coursera.org/share/0c33bad90040f4d4bb17bc8c4b090ef7'
+      verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/TEJX1V3WZEJ2'
     },
     {
       id: 3,
       title: 'Fundamentals of Java Programming',
       issuer: 'Coursera',
       date: '2024',
-      image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop',
+      image: 'https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LW3L0TN9IHJW/CERTIFICATE_LANDING_PAGE~LW3L0TN9IHJW.jpeg',
       credentialId: 'JAVA-FUND-2024',
-      verifyUrl: 'https://coursera.org/share/6b7f14ba72a7a8c1c6bd5799f7eac620'
+      verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/LW3L0TN9IHJW'
     },
     {
       id: 4,

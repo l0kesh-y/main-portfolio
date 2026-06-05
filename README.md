@@ -32,8 +32,22 @@ A premium, modern portfolio website showcasing my skills as a Full Stack Java De
 
 ## 🚀 Live Demo
 
-**Frontend**: [https://main-portfolio-lokesh.onrender.com](https://main-portfolio-lokesh.onrender.com)
-**Backend API**: [https://portfolio-backend-lokesh.onrender.com](https://portfolio-backend-lokesh.onrender.com)
+**Portfolio**: [https://lokesh-portfolio.netlify.app](https://lokesh-portfolio.netlify.app) (Will be your URL)
+
+## 🏃‍♂️ Quick Deployment
+
+### 1. Make Repository Public
+- Go to Settings → General → Danger Zone
+- Change visibility to **Public**
+
+### 2. Deploy on Netlify
+- Visit [netlify.com](https://netlify.com)
+- Import from GitHub: `l0kesh-y/main-portfolio`
+- Build command: `npm install && npm run build`
+- Publish directory: `build`
+- Click Deploy!
+
+✅ **Live in 2 minutes!**
 
 ## 🏃‍♂️ Running Locally
 
